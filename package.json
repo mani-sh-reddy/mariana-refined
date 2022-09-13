@@ -1,0 +1,21 @@
+{
+  "name": "mariana-replica",
+  "displayName": "mariana-replica",
+  "description": "Sublime Text's Default Dark theme",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.71.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Mariana Replica",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Mariana Replica-color-theme.json"
+      }
+    ]
+  }
+}
