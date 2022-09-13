@@ -6,4 +6,7 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ## [Unreleased]
 
-- Initial release
+## [0.0.1] - 2022-09-11
+### Added
+- Mariana Light Theme
+- Mariana Refined (Dark) Theme

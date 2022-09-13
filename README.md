@@ -1,16 +1,11 @@
-# mariana-replica README
+# Mariana Refined Themes
 
-## Working with Markdown
+![Mariana Refined VS Code theme](https://raw.githubusercontent.com/mani-sh-reddy/mariana-refined/main/screenshot.png)
 
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
+## Install
 
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+1. Go to [VS Marketplace](https://marketplace.visualstudio.com/items?itemName=mani-sh-reddy.mariana-replica).
+2. Click on the "Install" button.
+3. Then [select a theme](https://code.visualstudio.com/docs/getstarted/themes#_selecting-the-color-theme).
+    - Light: `Mariana Light`
+    - Dark: `Mariana Refined`

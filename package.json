@@ -1,10 +1,20 @@
 {
-  "name": "mariana-replica",
-  "displayName": "mariana-replica",
+  "name": "mariana-refined",
+  "displayName": "Mariana Refined",
   "description": "Sublime Text's Default Dark theme",
+  "publisher": "mani-sh-reddy",
+  "__metadata": {
+    "publisherDisplayName": "mani-sh-reddy"
+  },
+  "license": "The Unlicense",
   "version": "0.0.1",
+  "icon": "icon.png",
+  "galleryBanner": {
+    "color": "#1e2227",
+    "theme": "dark"
+  },
   "engines": {
-    "vscode": "^1.71.0"
+    "vscode": "^0.10.5"
   },
   "categories": [
     "Themes"
@@ -12,14 +22,27 @@
   "contributes": {
     "themes": [
       {
-        "label": "Mariana Replica",
+        "label": "Mariana Light",
+        "uiTheme": "vs",
+        "path": "./themes/mariana-light-color-theme.json"
+      },
+      {
+        "label": "Mariana Refined",
         "uiTheme": "vs-dark",
-        "path": "./themes/Mariana Replica-color-theme.json"
+        "path": "./themes/mariana-refined-color-theme.json"
       }
     ]
   },
   "repository": {
-    "url": "https://github.com/mani-sh-reddy/mariana-replica"
+    "type": "git",
+    "url": "https://github.com/mani-sh-reddy/mariana-refined"
   },
-  "publisher": "mani-sh-reddy"
+  "keywords": [
+    "theme",
+    "mariana",
+    "sublime",
+    "light",
+    "dark",
+    "refined"
+  ]
 }
