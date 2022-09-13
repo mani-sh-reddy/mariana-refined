@@ -33,6 +33,22 @@ jobs:
 
       - name: Patch
         run: npm version patch
+        id: updated_npm_version
+
+      - uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          branch: main
+          commit_message: updated to ${{ steps.updated_npm_version.outputs.stdout }}
+          commit_options: '--no-verify --signoff'
+          commit_user_name: Manish Reddy
+          commit_user_email: ${{ secrets.USER_EMAIL }}
+          commit_author: Manish Reddy <${{ secrets.USER_EMAIL }}>
+          tagging_message: '${{ steps.updated_npm_version.outputs.stdout }}'
+          push_options: '--force'
+          skip_dirty_check: true    
+          skip_fetch: true    
+          skip_checkout: true
+          disable_globbing: true
 
       - name: Publish
         run: vsce publish -p ${{ secrets.VS_MARKETPLACE_TOKEN }}
