@@ -17,5 +17,9 @@
         "path": "./themes/Mariana Replica-color-theme.json"
       }
     ]
-  }
+  },
+  "repository": {
+    "url": "https://github.com/mani-sh-reddy/mariana-replica"
+  },
+  "publisher": "mani-sh-reddy"
 }
