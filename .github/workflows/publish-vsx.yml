@@ -1,4 +1,4 @@
-name: Publish VSX to Visual Studio Marketplace
+name: Publish VSX
 on:
   release:
     types:
