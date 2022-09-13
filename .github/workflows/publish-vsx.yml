@@ -1,8 +1,8 @@
-name: Publish VSX
+name: Increment & Publish VSX
 on:
-  release:
-    types:
-      - published
+  push:
+    branches:
+      - main
   workflow_dispatch:
 
 jobs:
@@ -11,6 +11,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
+        with:
+          ref: ${{ github.head_ref }}
       - uses: actions/setup-node@v1
         with:
           node-version: 14
@@ -21,6 +23,24 @@ jobs:
 
       - name: Install vsce
         run: npm i -g vsce
+
+      - name: Setup git - user email
+        run: git config user.email "${{ secrets.USER_EMAIL }}"
+
+      - name: Setup git - user name
+        run: git config user.name "Manish Reddy"
+
+      - name: Install vsce
+        run: npm i -g vsce
+
+      - name: Patch
+        id: updated_npm_version
+        run: |
+          npm version patch -m "Updated to v%s"
+
+      - name: Push to repository
+        run: |
+          git push origin main --tags
 
       - name: Publish
         run: vsce publish -p ${{ secrets.VS_MARKETPLACE_TOKEN }}
