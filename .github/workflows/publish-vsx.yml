@@ -22,6 +22,15 @@ jobs:
       - name: Install vsce
         run: npm i -g vsce
 
+      - name: Setup git - user email
+        run: git config user.email "${{ secrets.USER_EMAIL }}"
+
+      - name: Setup git - user name
+        run: git config user.name "Manish Reddy"
+
+      - name: Install vsce
+        run: npm i -g vsce
+
       - name: Patch
         run: npm version patch
 
