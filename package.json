@@ -7,7 +7,7 @@
     "publisherDisplayName": "mani-sh-reddy"
   },
   "license": "The Unlicense",
-  "version": "0.0.6",
+  "version": "0.0.10",
   "icon": "icon.png",
   "galleryBanner": {
     "color": "#1e2227",
@@ -22,14 +22,14 @@
   "contributes": {
     "themes": [
       {
-        "label": "Mariana Light",
-        "uiTheme": "vs",
-        "path": "./themes/mariana-light-color-theme.json"
-      },
-      {
         "label": "Mariana Refined",
         "uiTheme": "vs-dark",
         "path": "./themes/mariana-refined-color-theme.json"
+      },
+      {
+        "label": "Mariana Light",
+        "uiTheme": "vs",
+        "path": "./themes/mariana-light-color-theme.json"
       }
     ]
   },
