@@ -38,8 +38,9 @@ jobs:
         run: |
           npm version patch -m "Updated to v%s"
 
-      - name: Push to repository
+      - name: Pull & Push to repository
         run: |
+          git pull
           git push origin main --tags
 
       - name: Publish
