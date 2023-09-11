@@ -22,14 +22,14 @@
   "contributes": {
     "themes": [
       {
-        "label": "Mariana Light",
-        "uiTheme": "vs",
-        "path": "./themes/mariana-light-color-theme.json"
-      },
-      {
         "label": "Mariana Refined",
         "uiTheme": "vs-dark",
         "path": "./themes/mariana-refined-color-theme.json"
+      },
+      {
+        "label": "Mariana Light",
+        "uiTheme": "vs",
+        "path": "./themes/mariana-light-color-theme.json"
       }
     ]
   },
